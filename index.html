@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>KOREZ OBFUSCATER</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>KOREZ OBFUSCATER 🔐</h1>
+    <p class="subtitle">Protect your Lua script like a god 😈</p>
+    <form id="uploadForm">
+      <input type="file" id="fileInput" accept=".lua,.txt" required />
+      <div class="options">
+        <label><input type="checkbox" id="antiTamper"> Anti Tamper</label>
+        <label><input type="checkbox" id="antiLeak"> Anti Leak</label>
+        <label><input type="checkbox" id="antiClown"> Anti Clown</label>
+        <label><input type="checkbox" id="padding"> Use 80KB Padding</label>
+      </div>
+      <button type="submit">Obfuscate</button>
+    </form>
+    <textarea id="output" placeholder="Your protected script will appear here..."></textarea>
+    <button id="downloadBtn" style="display:none;">Download Script</button>
+  </div>
+  <script src="assets/script.js"></script>
+</body>
+</html>
